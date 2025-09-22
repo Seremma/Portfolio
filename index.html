@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Sergio Reynoso</title>
-  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="estilo.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-  
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 <body>
-
   <nav class="barra-superior">
     <h1>Mi Portfolio</h1>
     <ul class="navegacion">
-      <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+      <li><a href="#sobremi" class="nav-link">Sobre mí</a></li>
       <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
       <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
       <li><a href="#contacto" class="nav-link">Contacto</a></li>
@@ -24,16 +20,111 @@
     
   </nav>
 
-  <main class ="menu" >
-    <ul class="menu">
-      <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
-      <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-      <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-      <li><a href="#contacto" class="nav-link">Contacto</a></li>
-    </ul>
-    <button class="menu-hamburguesa" id="menu-hamburguesa">
-      <ion-icon class="barras" name="menu-outline"></ion-icon>
+  <main>
+    <nav class="pokemon-menu">
+      <h2>SERGIO REYNOSO</h2>
+      <ul class="menu-lista">
+        <li><a href="#sobremi" class="nav-link" id="acerca-link-menu">Sobre mí</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="sobre-mi-contenedor">
+      <div class="sobre-mi-grupo">
+        <section id="sobremi" class="sobre-mi">
+          <h2>Sobre mí</h2>
+          <p>Soy Sergio Reynoso, desarrollador web apasionado por la tecnología y los videojuegos. Me especializo en crear experiencias digitales atractivas y funcionales.</p>
+        </section>
+        <div class="pokedex-img-externa-wrapper">
+          <img src="C:\Users\Serr\OneDrive\Documentos\Programación\Progra 3\Portfolio\Portfolio\pokedex-removebg-preview.png" alt="Pokedex" class="pokedex-img-externa">
+        </div>
+      </div>
+    </div>
+    <section id="habilidades" class="habilidades">
+      <h2>Habilidades</h2>
+      <ul class="habilidades-lista">
+        <li>
+          <span class="habilidad-nombre">HTML</span>
+          <div class="habilidad-barra">
+            <div class="habilidad-barra-fill" style="width:70%"></div>
+            <span class="habilidad-barra-num">70</span>
+          </div>
+        </li>
+        <li>
+          <span class="habilidad-nombre">C++</span>
+          <div class="habilidad-barra">
+            <div class="habilidad-barra-fill" style="width:90%"></div>
+            <span class="habilidad-barra-num">90</span>
+          </div>
+        </li>
+        <li>
+          <span class="habilidad-nombre">C#</span>
+          <div class="habilidad-barra">
+            <div class="habilidad-barra-fill" style="width:75%"></div>
+            <span class="habilidad-barra-num">75</span>
+          </div>
+        </li>
+        <li>
+          <span class="habilidad-nombre">JavaScript</span>
+          <div class="habilidad-barra">
+            <div class="habilidad-barra-fill" style="width:70%"></div>
+            <span class="habilidad-barra-num">70</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section id="proyectos" class="proyectos">
+      <h2>Proyectos</h2>
+      <div class="proyecto">
+        <h3>Pokédex Web</h3>
+        <p>Aplicación web interactiva para buscar y visualizar información de Pokémon.</p>
+        <a href="https://github.com/Seremma" target="_blank">Ver proyecto</a>
+      </div>
+      <div class="proyecto">
+        <h3>Portfolio Personal</h3>
+        <p>Este portfolio con temática Pokémon, hecho con HTML y CSS.</p>
+        <a href="https://github.com/Seremma/Portfolio.git" target="_blank">Ver código</a>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <form class="form-contacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+      <p class="contacto-mail">O escribime a: <a href="mailto:serg.emma@hotmail.com">serg.emma@hotmail.com</a></p>
+    </section>  
   </main>
-
+  <footer class="footer-redes">
+    <h3>Redes</h3>
+    <ul class="redes-lista">
+      <li><a href="https://www.instagram.com/sergio_emmanuel_reynoso/" target="_blank" class="red-ig">Instagram</a></li>
+      <li><a href="https://github.com/Seremma" target="_blank" class="red-git">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/sergio-emmanuel-reynoso/" target="_blank" class="red-linkedin">LinkedIn</a></li>
+    </ul>
+  </footer>
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            const rect = target.getBoundingClientRect();
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            const offset = rect.top + scrollTop - (window.innerHeight - target.offsetHeight) / 2;
+            window.scrollTo({
+              top: offset,
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
